@@ -3,6 +3,12 @@ html {
   accent-color: var(--color-accent);
   font:inherit;
   text-align: center;
+  color-scheme: dark
+}
+
+nav {
+	--border-color: oklch(50% 10% 200 / 40%);
+	/* ... other styles and nested rules ... */
 }
 
 image {
@@ -73,7 +79,8 @@ nav {
   margin-bottom: 50px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  /* border-bottom-color: oklch(80% 3% 200); */
+  border-bottom-color: var(--border-color);
 }
 
 a {
@@ -96,4 +103,12 @@ a:hover {
   border-bottom-style: solid;
   border-bottom-color: oklch(80% 3% 200);
   padding-bottom: 0.1em;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  gap: 4px;
 }
