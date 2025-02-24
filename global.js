@@ -11,9 +11,9 @@ let currentLink = navLinks.find(a => a.host === location.host && a.pathname === 
 
 let pages = [
 	{url: "", title: "Home"},
-	{url: "projects/", title: "Projects"},
-	{url: "resume.html", title: "Resume"},
-	{url: "contact/", title: "Contact"},
+	{url: "./projects/", title: "Projects"},
+	{url: "./resume.html", title: "Resume"},
+	{url: "./contact/", title: "Contact"},
 	{url: "https://github.com/g10ria", title: "Github"},
 ];
 let nav = document.createElement("nav");
