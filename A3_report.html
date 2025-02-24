@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Gloria Zhu</strong> — <em>gloriazh@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				This visualization seeks to depict the number of new Covid-19 cases in the United States
+				from January 2020 until the present day (~January 2022 in this case). 
+				It uses a spiral "axis" to denote the passage of time, with one full revolution
+				denoting one year; the number of cases is presented as a red band around that axis,
+				with the width of the band increasing with higher numbers of cases. There are some
+				notable trends in the visualization:
+			</p>
+
+			<ul>
+				<li>My eye was immediately drawn to the sharp increase in cases that occurred at the end 
+					of 2021 and beginning of 2022, as the red band fanned out dramatically. 
+					This trend was made more prominent by the fact that it cut out so abruptly, 
+					at the present day mark, seeming to suggest that it would continue accelerating 
+					outwards if action was not taken.</li>
+				<li>There is a notable trough around June and July of 2021, after a period of relatively
+					high case numbers around early 2021. The number of cases then increases slowly
+					throughout 2021, dips slightly, then increases dramatically at the onset of 2022.</li>
+				<li>The radial nature of the graph makes it easy to compare the numbers of new cases 
+					at the same time every year (e.g. January of 2020, 2021, and 2022). Additionally, 
+					the labeling of the graph draws my attention to the months of January, April, July, 
+					and October.</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<ul>
+				<li>Overall, I think that this visualization does a good job of making its point clear, 
+					even to someone who only glances at it quickly: that we are about to reach a peak number 
+					of new cases of the Omicron variant. Considering the context of the broader article, 
+					I see this aspect of the graphic as very successful; as I mentioned in the previous 
+					section, the sharp increase around January 2022 followed by the immediate vertical 
+					cutoff is striking visually. However, I do feel like it could have been more clear 
+					if the cutoff ended in a fade from red → white or something like that, to drive home 
+					the fact that this is an ongoing pandemic.
+				</li>
+				<li>The visualization is quite sparse in terms of labeling and information, 
+					and while I think this helps convey its point in a strong way, I also feel like it 
+					could benefit from some slightly more quantitative elements. For example, 
+					the red lines, although successful at illustrating broader trends lke troughs and 
+					increases, don't really convey much useful information at a micro level. 
+					In particular, they tend to "wobble" a lot, depicting what I assume are small 
+					fluctuations in data, but I don't think these wobbles add much useful information 
+					for the viewer; rather, they make the graphic look less strong and more uncertain. 
+					I would have liked to see a few more annotations, maybe noting exactly what the 
+					7-day average was in early 2021, or a short note explaining why we saw such a 
+					decrease in cases in mid 2021. Similarly, although they provide a legend explaining 
+					what band width corresponds to 150K cases, I found it hard to mentally transpose that 
+					legend onto the graphic in order to actually determine what the quantities were.
+				</li>
+				<li>Finally, I think that the spiral-shaped time axis the modeler chose is actually very effective. 
+					It immediately makes it clear just how long it's been since COVID-19 first sprang up, something 
+					that wouldn't be as visually striking in something like a line graph, and allows us to easily 
+					compare statistics across the same time each year. The viewer can either travel "outwards" through 
+					time, or "inwards" backwards; either way, they can gather the gist of the data at a glance. 
+					However, the decision to make the red bands symmetric about the central black spiral is a little 
+					confusing to me; it doesn't seem to serve any informational purpose, and the resulting shape combined 
+					with the red color creates a bit of an unnerving graphic form, almost like a wound.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="./images/a3_sketch1.png" style="width: 80%" alt="" />
+				<figcaption>
+						New COVID-19 cases, United States
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>
+					For this first sketch, I wanted to stick with the spiral axis that the old visualization had,
+					while exploring different ways of depicting magnitude of the data. I decided to go 
+					with color, since I felt that I could depict gradual changes over time through gradients while still 
+					partitioning the circle up into months effectively.
+				</li>
+				<li>
+					It was difficult to choose the palette; I think splitting it up into 7 buckets was too many, and 5 would have been 
+					just as effective. I made the highest numbers red to convey a sense of urgency, and because the only part of 
+					the graph that would be that bright shade of red would be the sharp increase at the end. This would draw the 
+					viewer's eye to that part of the graph, which helps support the main message of the visualization. I also included
+					a legend to provide some context to the viewer.
+				</li>
+				<li>Finally, I omitted all of the months except January and labeled the start of each year. I feel like this graph is 
+					successful in conveying the urgency of the January 2022 trend, but it is slightly confusing to read in the middle parts,
+					unless the viewer really digs in. However, I like how visually striking it is; I emphasized this by fading the final 
+					red part out of the spiral a bit. I also added an arrow at the end to emphasize to the viewer that this is an ongoing, 
+					present-day trend.
+				</li>
+			</ul>
+
+			<figure>
+				<img src="./images/a3_sketch2.png" style="width: 80%" alt="" />
+				<figcaption>
+					New COVID-19 cases, United States
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>For this sketch, I was inspired by the in-class discussion of small-multiples. I thought that this visualization concept could be 
+					particularly effective for this data because it already broken up neatly into chunks (years). I think that layering the three 
+					mini-graphs vertically allows the viewer to quickly compare Covid-19 levels across the three years, something that 
+					was harder to do in the spiral format.
+				</li>
+				<li>
+					In order to signal to the viewer that the graph continues
+					across the small multiples, I added color-coded arrows at the beginnings and ends of the charts. I also annotated them with an estimate 
+					of the statistics at the end of each year, just to give the viewer a benchmark. Since the data in 2022 is so short, it gave me room to 
+					add a longer annotation on the third chart, explaining the present-day statistic in more detail. I also faded out the red fill color 
+					in 2022 to signal that the situation is developing.
+				</li>
+				<li>Finally, I decided to make the Jan/Dec month labels very light, since I think the way that time is broken up is already pretty understandable. 
+					I did add light dotted lines dividing each year into quarters, giving the viewer some vertical anchors.
+				</li>
+			</ul>
+
+			<figure>
+				<img src="./images/a3_sketch3.png" style="width: 80%" alt="" />
+				<figcaption>
+					New COVID-19 cases, United States
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>I returned to the circular axis for this graph, because I wanted to explore the idea of layering all three years' data on top of each other.
+					In order to make them more legible, I added a semi-opaque fill to each circle of data, so that the overlapping parts would be darker. I think this strategy 
+					works for this dataset since we only have slightly more than two years' worth of data; for three years or more, it would probably start to get confusing.
+				</li>
+				<li>To indicate the direction of time (clockwise), I placed each year label in a white "flag" pointing to the right. I also took advantage of the 
+					large negative space in the middle of the circle to display the title, which I think makes the visualization more visually interesting.
+					I originally had some more detailed labeling on the magnitude axis, but I ended up omitting it because I felt like it made the top part of the visualization
+					 look too busy. Instead, I chose to just annotate the very last data point, at present-day in January 2022. I think that this draws the user's eye more 
+					 effectively and conveys the message of the graph clearly with the upward trend arrow. I also labeled "Jan", but in hindsight, I feel like this was unnecessary - 
+					 the viewer probably could have inferred that themselves.
+				</li>
+				<li>
+					I think this visualization succeeds in conveying trends that seem to repeat each year: lower numbers of cases in the middle of the year and
+					surges around Dec/Jan. I also think its tear-drop composition makes it more interesting than a rectangular visualization like my previous sketch.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="./images/a3_viz-01.png" style="width: 80%" alt="" />
+				<figcaption>
+					New COVID-19 cases, United States
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+				For my final visualization, I wanted to create a more refined version of my first sketch, incorporating ideas from the other two. 
+				Using Adobe Illustrator, I was able to create a much cleaner spiral than my hand-drawn one, and I could tweak the "magnitude" of the spiral to 
+				achieve a more balanced composition. Before beginning the actual visualization, I pre-processed the data in Excel to extract and bucket monthly average quantities 
+				for the time range we were interested in. My final image differed from the sketch in a few ways:
+				<ul>
+					<li>
+						First, after fiddling around with different color schemes for a while, I decided to use only one color (red) and vary its opacity to indicate magnitude. 
+						I think this made the trends in the data easier to understand, and it also created more visual weight in the more opaque red areas, which was 
+						what I wanted. My original sketch simply varied hue, which was hard to grasp at a glance.
+					</li>
+					<li>
+						Second, instead of implementing smooth gradients across time, I took the average number of daily cases across each month. This helped 
+						make the graphic more clear, especially between years "stacked" on top of each other radially. I probably could have taken it a step further and bucketed by week instead, 
+						but I felt that it would create too many micro changes in opacity without adding much useful information. I also omitted the month labels completely, keeping only 
+						the year labels, assuming that the viewer would be able to infer that January starts where the year labels are located. 
+					</li>
+					<li>
+						Finally, I adjusted the overall composition: I made the legend slightly curved to match the visual language of the spiral 
+						and placed the title in the negative space in the top right. This has the added benefit of the arrow in the spiral graphic pointing directly at the title, 
+						so the viewer's eye is directed there immediately.
+					</li>
+				</ul>
+      		</p>
+
+      <h3>Reflection</h3>
+
+      <p>
+		I think I was able to address a good amount of the critiques I posed regarding the initial visualization. First, I think that I was able to maintain and even amplify 
+		the graphic's message regarding the Omicron spike. By using opacity to indicate magnitude instead of thickness, the January 2022 area of the graph is able to 
+		command even more visual weight. I also added a fade from the data out to white, as described in my critiques. However, I had a change of heart regarding annotations 
+		and detailing as I was making my sketches and final visualization. Although I originally thought that the graphic could benefit from more notes, I started to realize 
+		that adding those details would often make a chart kind of murky and would obscure the focus. For example, I removed the month annotations from my visualization and eliminated the actual radial lines 
+		(although they're still implied through the opacity shifts). Finally, I think making the spiral fully filled made it feel more structured, as one of my 
+		original critiques of Shaman's graphic was how the spiral and band shapes felt a little arbitrary and tenuous. 
+      </p>
+	  <p>
+		I think the process of "critique by redesign" helped me understand a lot more why Shaman made the decisions they did in the original visualization. It made me 
+		realize what affordances exist when working with certain types of data, attempting to convey a certain message. I also realized how important it is to have a 
+		clear goal in mind when designing a visualization - basically having something specific to say, so that all the graphic elements can be streamlined to serve that purpose.
+	  </p>
+		</section>
+	</main>
+</body>
+</html>
