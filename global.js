@@ -10,10 +10,10 @@ let currentLink = navLinks.find(a => a.host === location.host && a.pathname === 
 // currentLink?.classList.add("current");
 
 let pages = [
-	{url: "/c35_labs/", title: "Home"},
-	{url: "/c35_labs/projects/", title: "Projects"},
-	{url: "/c35_labs/resume.html", title: "Resume"},
-	{url: "/c35_labs/contact/", title: "Contact"},
+	{url: "https://g10ria.github.com/c35_labs/", title: "Home"},
+	{url: "https://g10ria.github.com/c35_labs/projects/", title: "Projects"},
+	{url: "https://g10ria.github.com/c35_labs/resume.html", title: "Resume"},
+	{url: "https://g10ria.github.com/c35_labs/contact/", title: "Contact"},
 	{url: "https://github.com/g10ria", title: "Github"},
 ];
 let nav = document.createElement("nav");
